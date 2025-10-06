@@ -15,7 +15,7 @@ color: #191970; /* Warna teks utama (hitam) */
   text-align: center; /* Menengahkan semua teks di dalam kartu */
 }
 .kartu-profil img {
-  widht: 150px;
+  widht: 90px;
   border-radius: 50px; /* trik untuk membuat gambar persegi menjadi lingkaran sempurna */
 }
 
