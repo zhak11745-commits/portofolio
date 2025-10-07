@@ -1,18 +1,24 @@
 body {
-   background-color: #FFFFE0; /* Warna kuning cerah*/
-   font-family: Arial, sans-sherif; /font yang digunakan/
+   background-color: #FFFFE0; /* Warna kuning cerah */
+   font-family: Arial, sans-serif; /* Perbaikan: font-family: Arial, sans-serif; */
    color: #191970;
 }
 .kartu-profil {
-    widht: 300px;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan*/
+    width: 300px; /* Perbaikan: 'widht' menjadi 'width' */
+    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan */
     padding: 20px;
     background-color: white;
-    border-radius: 15px; /* Membuat sudut menjadi melengkung*/
-    box-shadow: 0 4px 8px rgba(0,0,0,0,1); /Efek bayangan/
-    text-align: justify; /* Menengahkan semua teks */
+    border-radius: 15px; /* Membuat sudut menjadi melengkung */
+    
+    /* Perbaikan: Mengubah 'text-align: justify;' menjadi 'text-align: center;' */
+    /* PROPERTI INI MENENGahkan FOTO, NAMA, DAN TEKS */
+    text-align: center; 
+    
+    /* Perbaikan: Menghilangkan satu angka 0 yang berlebihan pada rgba() */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 .kartu-profil img {
     width: 150px;
     border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
+    /* TIDAK PERLU PROPERTI TAMBAHAN DI SINI, karena parent (.kartu-profil) sudah diatur text-align: center; */
 }
