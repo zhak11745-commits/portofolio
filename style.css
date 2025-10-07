@@ -1,32 +1,33 @@
 Body {
-   background-color: #FFFFE0; /* Warna kuning cerah (Light Yellow) */
-   font-family: Arial, sans-serif; /* Perbaikan: 'sans-sherif' seharusnya 'sans-serif' */
-   color: #191970; /* Warna teks: Midnight Blue */
+   background-color: #FFFFE0; /* Warna kuning cerah */
+   font-family: Arial, sans-serif; /* Perbaikan ejaan: sans-serif */
+   color: #191970;
 }
 
 .kartu-profil {
-    /* Perbaikan 1: 'widht' seharusnya 'width' */
-    width: 300px;
+    width: 300px; /* Perbaikan ejaan: width */
     margin: 50px auto;
     padding: 20px;
     background-color: white;
     border-radius: 15px;
-    /* Perbaikan 2: Nilai 'rgba()' untuk box-shadow kurang satu digit. */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Perbaikan nilai: box-shadow membutuhkan 4 nilai dalam rgba() */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     
-    /* Perbaikan 3: Properti ini sudah menengahkan teks, tidak perlu diubah */
+    /* PROPERTI INI SUDAH BENAR untuk menengahkan teks dan konten inline */
     text-align: center; 
 }
 
 .kartu-profil img {
     width: 150px;
     border-radius: 50%;
-    /* PENAMBAHAN: Untuk menengahkan elemen yang bersifat blok (jika ada margin auto di 'kartu-profil' tidak cukup) */
+    
+    /* SOLUSI UTAMA untuk menengahkan gambar: */
+    /* 1. Paksa gambar menjadi elemen block */
     display: block; 
-    margin: 0 auto 15px auto; /* Menengahkan gambar dan memberi jarak bawah */
-}
-
-/* PENAMBAHAN: Untuk memastikan semua teks/konten dalam kartu juga di tengah */
-.kartu-profil p, .kartu-profil h1, .kartu-profil div {
-    text-align: center;
+    
+    /* 2. Gunakan margin auto untuk menengahkan secara horizontal */
+    margin: 0 auto; 
+    
+    /* Opsional: Tambahkan sedikit jarak di bawah gambar */
+    margin-bottom: 15px;
 }
