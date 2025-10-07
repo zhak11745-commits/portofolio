@@ -1,18 +1,32 @@
-body {
-   background-color: #FFFFE0; /* Warna kuning cerah*/
-   font-family: Arial, sans-sherif; /font yang digunakan/
-   color: #191970;
+Body {
+   background-color: #FFFFE0; /* Warna kuning cerah (Light Yellow) */
+   font-family: Arial, sans-serif; /* Perbaikan: 'sans-sherif' seharusnya 'sans-serif' */
+   color: #191970; /* Warna teks: Midnight Blue */
 }
+
 .kartu-profil {
-    widht: 300px;
-    margin: 50px auto; /* 50px jarak atas/bawah, auto menengahkan kiri/kanan*/
+    /* Perbaikan 1: 'widht' seharusnya 'width' */
+    width: 300px;
+    margin: 50px auto;
     padding: 20px;
     background-color: white;
-    border-radius: 15px; /* Membuat sudut menjadi melengkung*/
-    box-shadow: 0 4px 8px rgba(0,0,0,0,1); /Efek bayangan/
-    text-align: center; /* Menengahkan semua teks */
+    border-radius: 15px;
+    /* Perbaikan 2: Nilai 'rgba()' untuk box-shadow kurang satu digit. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+    /* Perbaikan 3: Properti ini sudah menengahkan teks, tidak perlu diubah */
+    text-align: center; 
 }
+
 .kartu-profil img {
     width: 150px;
-    border-radius: 50%; /* Trik untuk membuat gambar persegi menjadi lingkaran sempurna */
+    border-radius: 50%;
+    /* PENAMBAHAN: Untuk menengahkan elemen yang bersifat blok (jika ada margin auto di 'kartu-profil' tidak cukup) */
+    display: block; 
+    margin: 0 auto 15px auto; /* Menengahkan gambar dan memberi jarak bawah */
+}
+
+/* PENAMBAHAN: Untuk memastikan semua teks/konten dalam kartu juga di tengah */
+.kartu-profil p, .kartu-profil h1, .kartu-profil div {
+    text-align: center;
 }
